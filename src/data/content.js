@@ -214,20 +214,6 @@ export const projects = [
     tags: ["TypeScript", "Docker", "CI/CD"],
   },
   {
-    title: "Project Title Placeholder 7",
-    category: "Software Engineering",
-    description:
-      "Short placeholder description — summarize the problem this project solved and the outcome it delivered.",
-    tags: ["Java", "Spring Boot", "PostgreSQL"],
-  },
-  {
-    title: "Project Title Placeholder 8",
-    category: "Software Engineering",
-    description:
-      "Short placeholder description — summarize the problem this project solved and the outcome it delivered.",
-    tags: ["React", "AWS", "PostgreSQL"],
-  },
-  {
     title: "Patentability Assessment Framework",
     category: "IP Law",
     description:
