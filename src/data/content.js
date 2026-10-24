@@ -22,6 +22,10 @@ import zoliShop from "../assets/projects/zolimart/shop.jpg";
 import zoliBargainModal from "../assets/projects/zolimart/bargain-modal.jpg";
 import zoliBargainResult from "../assets/projects/zolimart/bargain-result.jpg";
 import zoliSell from "../assets/projects/zolimart/sell.jpg";
+import freezeHome from "../assets/projects/de-freeze/home.jpg";
+import freezeRoleSelection from "../assets/projects/de-freeze/role-selection.jpg";
+import freezeDecisionTree from "../assets/projects/de-freeze/decision-tree.jpg";
+import freezeResolution from "../assets/projects/de-freeze/resolution.jpg";
 
 export const profile = {
   name: "Tony Izuogu",
@@ -200,11 +204,18 @@ export const projects = [
     ],
   },
   {
-    title: "Project Title Placeholder 5",
+    title: "De-Freeze",
     category: "Software Engineering",
     description:
-      "Short placeholder description — summarize the problem this project solved and the outcome it delivered.",
-    tags: ["React", "Redux", "REST API"],
+      "A Freeze Code Resolution Assistant for IRS account-management staff — pick a freeze code, answer a guided series of account questions (role, research findings, time elapsed, open IDRS controls), and get step-by-step resolution instructions with the relevant IRM references, from releasing the freeze to preparing Form 4442 or TAS referrals.",
+    tags: ["React", "Material UI", "Bootstrap"],
+    link: "https://de-freeze.vercel.app",
+    screenshots: [
+      { src: freezeHome, caption: "Freeze code selection" },
+      { src: freezeRoleSelection, caption: "-A Freeze — role & account research" },
+      { src: freezeDecisionTree, caption: "Guided decision tree" },
+      { src: freezeResolution, caption: "Required actions with IRM guidance" },
+    ],
   },
   {
     title: "Project Title Placeholder 6",
