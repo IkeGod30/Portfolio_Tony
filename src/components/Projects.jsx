@@ -91,6 +91,11 @@ export default function Projects() {
                   View Live <FiExternalLink />
                 </a>
               )}
+              {!project.link && project.liveNote && (
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-slate-400">
+                  {project.liveNote}
+                </span>
+              )}
             </div>
           </Reveal>
         ))}

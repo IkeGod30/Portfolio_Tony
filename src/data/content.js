@@ -26,6 +26,10 @@ import freezeHome from "../assets/projects/de-freeze/home.jpg";
 import freezeRoleSelection from "../assets/projects/de-freeze/role-selection.jpg";
 import freezeDecisionTree from "../assets/projects/de-freeze/decision-tree.jpg";
 import freezeResolution from "../assets/projects/de-freeze/resolution.jpg";
+import matchHome from "../assets/projects/matchme/home.jpg";
+import matchHowItWorks from "../assets/projects/matchme/how-it-works.jpg";
+import matchPicturePreferences from "../assets/projects/matchme/picture-preferences.jpg";
+import matchTestimonials from "../assets/projects/matchme/testimonials.jpg";
 
 export const profile = {
   name: "Tony Izuogu",
@@ -218,11 +222,18 @@ export const projects = [
     ],
   },
   {
-    title: "Project Title Placeholder 6",
+    title: "MatchMe",
     category: "Software Engineering",
     description:
-      "Short placeholder description — summarize the problem this project solved and the outcome it delivered.",
-    tags: ["TypeScript", "Docker", "CI/CD"],
+      "A personal matchmaking platform — seekers describe the partner they want (including picture-based physical preferences), a human matchmaker proposes hand-picked matches, and seekers pay only once a match is mutual. Includes a matchmaker back office and a super-user admin area, each with its own authentication realm.",
+    tags: ["React", "TypeScript", "Node.js", "Express", "SQLite"],
+    liveNote: "Check Back later for Live view",
+    screenshots: [
+      { src: matchHome, caption: "Landing — describe who you want to meet" },
+      { src: matchHowItWorks, caption: "How it works & pay-on-mutual-match" },
+      { src: matchPicturePreferences, caption: "Picture-based preferences" },
+      { src: matchTestimonials, caption: "Why a matchmaker & member stories" },
+    ],
   },
   {
     title: "Patentability Assessment Framework",
