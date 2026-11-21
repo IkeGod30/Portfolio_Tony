@@ -222,16 +222,16 @@ export const projects = [
     ],
   },
   {
-    title: "MatchMe",
+    title: "MatchMeHub",
     category: "Software Engineering",
     description:
-      "A personal matchmaking platform — seekers describe the partner they want (including picture-based physical preferences), a human matchmaker proposes hand-picked matches, and seekers pay only once a match is mutual. Includes a matchmaker back office and a super-user admin area, each with its own authentication realm.",
+      "Personal matchmaking, not another swipe app — seekers describe the person they want to meet, setting location, nationality, profession, age and physical features through a picture-based feature wizard, and a real matchmaker hand-picks proposals for them to accept or decline. No upfront fees: members pay only once a match is mutual, and profiles stay private to the member, their matchmaker and proposed matches. Includes a matchmaker back office and a super-user admin area, each with its own authentication realm.",
     tags: ["React", "TypeScript", "Node.js", "Express", "SQLite"],
-    liveNote: "Check Back later for Live view",
+    link: "https://matchmehub.com",
     screenshots: [
-      { src: matchHome, caption: "Landing — describe who you want to meet" },
-      { src: matchHowItWorks, caption: "How it works & pay-on-mutual-match" },
-      { src: matchPicturePreferences, caption: "Picture-based preferences" },
+      { src: matchHome, caption: "Landing — describe the person you want to meet" },
+      { src: matchHowItWorks, caption: "How it works & pay-on-mutual-match pricing" },
+      { src: matchPicturePreferences, caption: "Feature wizard — preferences by picture" },
       { src: matchTestimonials, caption: "Why a matchmaker & member stories" },
     ],
   },
