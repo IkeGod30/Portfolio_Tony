@@ -145,13 +145,6 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Predictive Analytics Platform",
-    category: "Machine Learning",
-    description:
-      "An end-to-end ML pipeline that ingests business data, trains predictive models, and serves real-time predictions through a monitored API.",
-    tags: ["Python", "PyTorch", "Docker", "AWS"],
-  },
-  {
     title: "What to Watch",
     category: "Software Engineering",
     description:
@@ -234,20 +227,6 @@ export const projects = [
       { src: matchPicturePreferences, caption: "Feature wizard — preferences by picture" },
       { src: matchTestimonials, caption: "Why a matchmaker & member stories" },
     ],
-  },
-  {
-    title: "Patentability Assessment Framework",
-    category: "IP Law",
-    description:
-      "A structured methodology for evaluating the novelty and non-obviousness of software and ML inventions ahead of a patent filing.",
-    tags: ["Prior-Art Research", "IP Strategy", "Documentation"],
-  },
-  {
-    title: "NLP Document Classifier",
-    category: "Machine Learning",
-    description:
-      "A text classification system that automatically triages and tags incoming documents, cutting manual review time significantly.",
-    tags: ["NLP", "scikit-learn", "Flask"],
   },
 ];
 

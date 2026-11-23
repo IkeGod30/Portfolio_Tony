@@ -1,22 +1,11 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { FiExternalLink, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Reveal from "./Reveal";
 import ProjectCarousel from "./ProjectCarousel";
 import { projects } from "../data/content";
 
-const categories = ["All", "Software Engineering", "Machine Learning", "IP Law"];
-
 export default function Projects() {
-  const [active, setActive] = useState("All");
   const [lightbox, setLightbox] = useState(null); // { shots, index }
-
-  const filtered = useMemo(
-    () =>
-      active === "All"
-        ? projects
-        : projects.filter((p) => p.category === active),
-    [active]
-  );
 
   const showShot = (delta) =>
     setLightbox((lb) => ({
@@ -34,24 +23,8 @@ export default function Projects() {
         <h2 className="section-heading mt-4">Projects &amp; case studies</h2>
       </Reveal>
 
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActive(cat)}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-              active === cat
-                ? "bg-gold-500 text-ink-950"
-                : "border border-white/10 bg-white/5 text-slate-300 hover:border-gold-400/40"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
-
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        {filtered.map((project, i) => (
+        {projects.map((project, i) => (
           <Reveal key={project.title} delay={i * 0.08}>
             <div className="card h-full p-7 transition hover:border-gold-400/40">
               <span className="text-xs font-semibold uppercase tracking-wide text-gold-400">
